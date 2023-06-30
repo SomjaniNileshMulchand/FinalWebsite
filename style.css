@@ -1,0 +1,191 @@
+*{
+    /* padding: 0;
+    margin: 0; */
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+nav{
+    background: blue;
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+
+}
+@media (max-width: 952px) {
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 858px) {
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: black;
+        top: 80px;
+        left:-100%;
+        text-align: center;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+#card{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%
+}
+.create{
+    margin-top: 4rem;
+    background-color: rgb(222, 222, 222);
+    width: 280px;
+    height: 240px;
+    padding: 20px;
+    margin: 20px;
+}
+#img{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+
+img{
+    width: 380px;
+    height: 280px;
+}
+.course{
+    background-color: aliceblue;
+    width: 27%;
+    border-radius: 5px;
+    margin: 40px;
+    display: inline-block;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    color: black;
+}
+.footer{
+    background-color: whitesmoke;
+}
+.foot{
+    margin-top: 1rem;
+
+}
+.foot ul{
+    margin-top: 1rem;
+}
+h4:hover{
+    color: black;
+    text-decoration: underline;
+}
+li :hover{
+    color: rgb(206, 105, 105);
+}
+li:hover{
+    list-style-type: none;
+}
+
+@media (max-width:1500px) {
+    #card{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    #img{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    img{
+        width: 300px;
+        height: 200px;
+    }
+    .footer{
+        display: flex;
+        align-items: center;
+        flex-direction: column  ;
+    }
+}
+
+@media (max-width:1200px) {
+    h1{
+        font-size: 35px;
+    }
+    p{
+        font-size: 28px;
+    }
+    .text{
+        font-size: 18px;
+    }
+    .create{
+        width: 400px;
+        height: 400px;
+    }
+    .course{
+        width: 400px;
+        height: 500px;
+    }
+    .footer{
+        font-size: 10px;
+    }
+}
+    
+
