@@ -1,6 +1,6 @@
 *{
-    /* padding: 0;
-    margin: 0; */
+    padding: 0;
+    margin: 0; 
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
@@ -161,7 +161,7 @@ li:hover{
     .footer{
         display: flex;
         align-items: center;
-        flex-direction: column  ;
+        flex-direction: row;
     }
 }
 
