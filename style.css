@@ -93,7 +93,7 @@ nav ul li a{
 .create{
     margin-top: 4rem;
     background-color: rgb(222, 222, 222);
-    width: 280px;
+    width: 300px;
     height: 240px;
     padding: 20px;
     margin: 20px;
@@ -121,10 +121,12 @@ img{
     display: flex;
     justify-content: space-around;
     color: black;
-}
-.footer{
     background-color: whitesmoke;
+    position: relative;
+    top: 50px;
 }
+/* .footer{
+} */
 .foot{
     margin-top: 1rem;
 
@@ -161,8 +163,17 @@ li:hover{
     .footer{
         display: flex;
         align-items: center;
-        flex-direction: row;
+        flex-direction: column;
     }
+}
+@media (max-width:900px)
+{
+    .text{
+        font-size: 8px;
+        display: flex;
+        flex-shrink: 3;
+    }
+    
 }
 
 @media (max-width:1200px) {
@@ -174,6 +185,7 @@ li:hover{
     }
     .text{
         font-size: 16px;
+        
     }
     .create{
         width: 300px;
@@ -184,7 +196,9 @@ li:hover{
         height: 400px;
     }
     .footer{
-        font-size: 10px;
+
+        font-size: 2rem;
+        text-align: center;
     }
 }
     
