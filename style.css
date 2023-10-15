@@ -9,12 +9,12 @@ body{
     font-family: 'Courier New', Courier, monospace;
 }
 nav{
-    background: blue;
+    background: rgb(217, 217, 230);
     height: 80px;
     width: 100%;
 }
 label.logo{
-    color: white;
+    color: rgb(58, 47, 47);
     font-size: 35px;
     line-height: 80px;
     padding: 0 100px;
@@ -30,7 +30,7 @@ nav ul li{
     margin: 0 5px;
 }
 nav ul li a{
-    color: white;
+    color: rgb(22, 17, 17);
     font-size: 17px;
     padding: 7px 13px;
     border-radius: 3px;
